@@ -5,7 +5,7 @@ import {
   FaGithub, FaTwitter, FaGlobe 
 } from 'react-icons/fa'
 import './Contact.css'
-const backendUrl = process.env.REACT_APP_BACKEND_URL;
+const backendUrl = import.meta.env.VITE_REACT_APP_BACKEND_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
