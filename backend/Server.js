@@ -8,30 +8,13 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5002;
 
-// Middleware to parse JSON bodies
+// Middleware to parse JSON bodies.
+// This is necessary to access req.body in POST requests.
 app.use(express.json());
 
-// Configure CORS to allow requests from your React frontend
-const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:5173",
-  "https://portfolio-lyart-zeta-iots5fv77x.vercel.app/", // Your Vercel frontend URL
-];
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true,
-    optionsSuccessStatus: 204,
-  })
-);
+// Configure CORS to allow requests from all origins.
+// This is the simplest way to handle dynamic URLs from Vercel.
+app.use(cors());
 
 // Test endpoint to verify server is running
 app.get("/", (req, res) => {
