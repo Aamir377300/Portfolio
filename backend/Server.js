@@ -15,7 +15,7 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
-  "https://portfolio-flame-one-f4bqj8qkzh.vercel.app/", // Your Vercel frontend URL
+  "https://portfolio-lyart-zeta-iots5fv77x.vercel.app/", // Your Vercel frontend URL
 ];
 
 app.use(
