@@ -50,7 +50,7 @@ A personal portfolio website crafted with the **MERN stack** (MongoDB, Express.j
 I’m always open to new opportunities, collaborations, and tech discussions. Reach out via the contact form or directly:  
 
 - **Email:** [belalaamirkhan@gmail.com](mailto:belalaamirkhan@gmail.com)  
-- **LinkedIn:** [Aamir Belal Khan](https://www.linkedin.com/in/) *(add profile link)*  
+- **LinkedIn:** [Aamir Belal Khan](https://www.linkedin.com/in/aamir-belal-khan-497b92321/)  
 - **GitHub:** [Aamir377300](https://github.com/Aamir377300)  
 
 ---
