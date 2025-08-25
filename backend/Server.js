@@ -12,9 +12,21 @@ const port = process.env.PORT || 5002;
 app.use(express.json());
 
 // Configure CORS to allow requests from your React frontend
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:5173",
+  "https://portfolio-dik0kxtpp-aamir-khans-projects-03a08131.vercel.app", // Your Vercel frontend URL
+];
+
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5173"], // Add both common React ports
+    origin: function (origin, callback) {
+      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 204,
@@ -30,8 +42,8 @@ app.get("/", (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USER, // Your Gmail address from .env
-    pass: process.env.EMAIL_PASS, // Fixed: Use EMAIL_PASS not APP_PASSWORD
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -58,23 +70,22 @@ app.post("/send-email", async (req, res) => {
 
   try {
     const mailOptions = {
-      from: process.env.EMAIL_USER, // Sender address (your email)
-      to: process.env.RECIPIENT_EMAIL, // Fixed: Use RECIPIENT_EMAIL from .env
-      replyTo: email, // Set reply-to to the sender's email from the form
+      from: process.env.EMAIL_USER,
+      to: process.env.RECIPIENT_EMAIL,
+      replyTo: email,
       subject: `Contact Form: ${subject} from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
       html: `
-                <h2>New Contact Form Submission</h2>
+        <h2>New Contact Form Submission</h2>
         <p>You have received a new message from Portfolio website contact form. Below are the details:</p>
         
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
         
-            <p><strong>Message:</strong></p>
-            <p>${message}</p>
-
-            `,
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
     };
 
     // Send the email
