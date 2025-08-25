@@ -1,3 +1,15 @@
+## 📸 Glimpse of the Portfolio  
+
+![Portfolio Screenshot](./screenshot.png)
+
+---
+
+## 🔗 Experience It Live  
+
+👉 [Live Demo](#) *(https://portfolio-5owp9zdob-aamir-khans-projects-03a08131.vercel.app/)*  
+
+---
+
 # 🚀 My Portfolio Website  
 
 A personal portfolio website crafted with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to showcase my projects, skills, and provide an easy way to connect through a contact form.  
@@ -20,8 +32,7 @@ A personal portfolio website crafted with the **MERN stack** (MongoDB, Express.j
 - **React** – Dynamic and interactive UI development.  
 - **Vite** – Next-gen frontend tooling for fast builds.  
 - **Framer Motion** – Stunning animations and gestures.  
-- **React Icons** – Popular icons for visual communication.  
-- **Tailwind CSS** *(if applicable)* – Utility-first CSS framework for rapid styling.  
+- **React Icons** – Popular icons for visual communication.   
 
 ### Backend  
 - **Node.js** – Server-side runtime.  
@@ -29,21 +40,9 @@ A personal portfolio website crafted with the **MERN stack** (MongoDB, Express.j
 - **Nodemailer** – Handles contact form email sending.  
 - **CORS** – Middleware for cross-origin requests.  
 - **Dotenv** – Secure environment variable management.  
+ 
 
-### Database (Optional)  
-- **MongoDB** – NoSQL database for storing portfolio data or contact form history. *(Optional, as Nodemailer directly sends emails without needing a DB).*  
 
----
-
-## 📸 Glimpse of the Portfolio  
-
-_Add screenshots here showing the Home, Projects, and Contact sections. Also include responsive views for mobile and tablet._  
-
----
-
-## 🔗 Experience It Live  
-
-👉 [Live Demo](#) *(Replace with your deployed Vercel/Render/Netlify link)*  
 
 ---
 
