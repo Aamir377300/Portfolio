@@ -4,12 +4,6 @@
 
 ---
 
-## 🔗 Experience It Live  
-
-[Live Demo](https://portfolio-brown-ten-83.vercel.app/)
-
----
-
 # 🚀 My Portfolio Website  
 
 A personal portfolio website crafted with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to showcase my projects, skills, and provide an easy way to connect through a contact form.  
