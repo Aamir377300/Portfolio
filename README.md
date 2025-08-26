@@ -6,7 +6,8 @@
 
 ## 🔗 Experience It Live  
 
-[Live Demo](https://portfolio-h3gvjzbs3-aamir-khans-projects-03a08131.vercel.app/)
+[Live Demo](https://portfolio-2kuqigtzy-aamir-khans-projects-03a08131.vercel.app/)
+
 ---
 
 # 🚀 My Portfolio Website  
