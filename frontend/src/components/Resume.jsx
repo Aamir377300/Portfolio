@@ -1,25 +1,20 @@
 import { motion } from 'framer-motion'
-import { FaDownload, FaFilePdf } from 'react-icons/fa'
+import { FaFilePdf } from 'react-icons/fa'
 import './Resume.css'
-import myResume from '../Assest/latestResume.pdf' // <-- Change this path to your file name
+import myResume from '../Assest/latest_resume.pdf'
 
 const Resume = () => {
-  const handleDownload = () => {
-    // Use the imported variable directly
-    const resumeUrl = myResume
-    
-    // Create a temporary link element
-    const link = document.createElement('a')
-    link.href = resumeUrl
-    link.download = 'Aamir_Resume.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+
+  const handleViewResume = () => {
+    // Opens PDF in a new tab
+    window.open(myResume, "_blank", "noopener,noreferrer")
   }
 
   return (
     <section className="resume" id="resume">
       <div className="container">
+
+        {/* Header */}
         <motion.div 
           className="section-header"
           initial={{ opacity: 0, y: 50 }}
@@ -28,9 +23,10 @@ const Resume = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">Resume</h2>
-          <p className="section-subtitle">Download my detailed resume</p>
+          <p className="section-subtitle">View my detailed resume</p>
         </motion.div>
         
+        {/* Resume Card */}
         <motion.div 
           className="resume-content"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -39,19 +35,20 @@ const Resume = () => {
           viewport={{ once: true }}
         >
           <div className="resume-card">
+
             <div className="resume-icon">
               <FaFilePdf size={60} />
             </div>
             
             <h3 className="resume-title">My Resume</h3>
             <p className="resume-description">
-              Download my comprehensive resume that includes my work experience, 
-              skills, education, and achievements in detail.
+              View my complete resume including my education, projects, skills,
+              and achievements.
             </p>
-            
+
             <motion.button 
               className="resume-download-btn"
-              onClick={handleDownload}
+              onClick={handleViewResume}
               whileHover={{ 
                 scale: 1.05, 
                 y: -2,
@@ -59,17 +56,17 @@ const Resume = () => {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaDownload />
-              Download Resume
+              View Resume
             </motion.button>
             
             <div className="resume-info">
               <p><strong>Format:</strong> PDF</p>
-              <p><strong>Last Updated:</strong> Aug 2025</p>
-              
+              <p><strong>Last Updated:</strong>Nov 2025</p>
             </div>
+
           </div>
         </motion.div>
+
       </div>
     </section>
   )

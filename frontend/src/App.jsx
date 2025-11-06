@@ -1,10 +1,12 @@
+// open source from headers and open source components are also removed
+
 import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import WorkExperience from './components/WorkExperience'
-import OpenSource from './components/OpenSource'
+// import OpenSource from './components/OpenSource'
 import Achievements from './components/Achievements'
 import Blogs from './components/Blogs'
 import Resume from './components/Resume'
@@ -39,7 +41,7 @@ function App() {
         <Hero />
         <Skills />
         <WorkExperience />
-        <OpenSource />
+        {/* <OpenSource /> */}
         <Achievements />
         <Blogs />
         <Resume />

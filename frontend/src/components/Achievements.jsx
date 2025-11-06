@@ -2,10 +2,11 @@ import { motion } from 'framer-motion'
 import { FaTrophy, FaMedal, FaCertificate, FaStar } from 'react-icons/fa'
 import NEC from '../Assest/Certificate/NEC.png'
 import HTML_CSS from '../Assest/Certificate/HTML_CSS.png'
-import java from '../Assest/Certificate/java.png'
-import JS from '../Assest/Certificate/JS.png'
+// import java from '../Assest/Certificate/java.png'
+// import JS from '../Assest/Certificate/JS.png'
 import Postman from '../Assest/Certificate/Postman.png'
 import Wadhwani from '../Assest/Certificate/Wadhwani.png'
+import Hacktoberfest from '../Assest/Certificate/Hacktoberfest.png'
 
 import './Achievements.css'
 
@@ -29,35 +30,35 @@ const Achievements = () => {
       category: 'Entrepreneurship',
       date: 'December 2024'
     },
+    // {
+    //   id: 3,
+    //   title: 'HTML & CSS',
+    //   description: 'Successfully completed the HTML & CSS Bootcamp from Lets Upgrade. This certification signifies my foundational knowledge in creating and styling web pages, including a strong grasp of semantic HTML and responsive design using CSS.',
+    //   image: HTML_CSS,
+    //   icon: FaCertificate,
+    //   category: ['Web Development', 'Front-End'],
+    //   date: 'January 2025'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Java Programming Fundamentals Certification',
+    //   description: 'Successfully completed the Java Programming Bootcamp by Lets Upgrade. This certification validates my foundational knowledge of Java, including object-oriented programming (OOP) principles, data structures, and core programming concepts.',
+    //   image: java,
+    //   icon: FaCertificate,
+    //   category: 'java Programming',
+    //   date: 'November 2024'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'JavaScript Essentials Badge',
+    //   description: 'Achieved a certificate in JavaScript Essentials from Lets Upgrade. This program solidified my foundational knowledge and practical skills in JavaScript, enabling me to develop interactive and dynamic web experiences.',
+    //   image: JS,
+    //   icon: FaStar,
+    //   category: ['Web Development', 'Front-End', 'Programming'],
+    //   date: 'November 2024'
+    // },
     {
       id: 3,
-      title: 'HTML & CSS',
-      description: 'Successfully completed the HTML & CSS Bootcamp from Lets Upgrade. This certification signifies my foundational knowledge in creating and styling web pages, including a strong grasp of semantic HTML and responsive design using CSS.',
-      image: HTML_CSS,
-      icon: FaCertificate,
-      category: ['Web Development', 'Front-End'],
-      date: 'January 2025'
-    },
-    {
-      id: 4,
-      title: 'Java Programming Fundamentals Certification',
-      description: 'Successfully completed the Java Programming Bootcamp by Lets Upgrade. This certification validates my foundational knowledge of Java, including object-oriented programming (OOP) principles, data structures, and core programming concepts.',
-      image: java,
-      icon: FaCertificate,
-      category: 'java Programming',
-      date: 'November 2024'
-    },
-    {
-      id: 5,
-      title: 'JavaScript Essentials Badge',
-      description: 'Achieved a certificate in JavaScript Essentials from Lets Upgrade. This program solidified my foundational knowledge and practical skills in JavaScript, enabling me to develop interactive and dynamic web experiences.',
-      image: JS,
-      icon: FaStar,
-      category: ['Web Development', 'Front-End', 'Programming'],
-      date: 'November 2024'
-    },
-    {
-      id: 6,
       title: 'API Testing with Postman Certification',
       description: 'Achieved a certification in API Testing with Postman. This demonstrates my proficiency in using Postman to test, automate, and document APIs, ensuring their functionality and reliability.',
       image: Postman,
@@ -65,24 +66,16 @@ const Achievements = () => {
       category: ['API Testing', 'Quality Assurance (QA)', 'Software Development'],
       date: 'December 2024'
     },
-    // {
-    //   id: 7,
-    //   title: 'Best Developer Award 2023',
-    //   description: 'Recognized in Bengaluru for outstanding contributions to open source projects and innovative solutions in web development.',
-    //   image: 'https://via.placeholder.com/300x200/8B5CF6/FFFFFF?text=Developer+Award',
-    //   icon: FaTrophy,
-    //   category: 'Recognition',
-    //   date: 'December 2023'
-    // },
-    // {
-    //   id: 8,
-    //   title: 'Top Open Source Contributor',
-    //   description: 'Acknowledged as a leading contributor to various open source initiatives, with significant contributions made from Bengaluru.',
-    //   image: 'https://via.placeholder.com/300x200/4C51EF/FFFFFF?text=Open+Source',
-    //   icon: FaStar,
-    //   category: 'Open Source',
-    //   date: 'December 2023'
-    // }
+    {
+      id: 4,
+      title: 'Hacktoberfest Super Contributor',
+      description: 'Achieved the Super Contributor status in Hacktoberfest after successfully merging 6 pull requests in open-source repositories. Contributed meaningful features and improvements while collaborating with the global developer community.',
+      image: Hacktoberfest,
+      icon: FaCertificate,
+      // icon: 'fa-solid fa-code-branch',
+      category: 'Open Source',
+      date: '2025'
+    },
   ]
 
   return (
@@ -100,7 +93,9 @@ const Achievements = () => {
         </motion.div>
         
         <div className="achievements-grid">
-          {achievements.map((achievement, index) => (
+          {achievements.map((achievement, index) => {
+            const Icon = achievement.icon
+            return (
             <motion.div 
               key={achievement.id}
               className="achievement-card"
@@ -117,7 +112,7 @@ const Achievements = () => {
                 <img src={achievement.image} alt={achievement.title} />
                 <div className="achievement-overlay">
                   <div className="achievement-icon">
-                    <achievement.icon size={40} />
+                    <Icon size={40} />
                   </div>
                 </div>
               </div>
@@ -141,7 +136,8 @@ const Achievements = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
