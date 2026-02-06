@@ -14,7 +14,7 @@ const Header = () => {
     { id: 'work-experience', label: 'Work Experience' },
     // { id: 'open-source', label: 'Open Source' },
     { id: 'achievements', label: 'Achievements' },
-    { id: 'blogs', label: 'Blogs' },
+    // { id: 'blogs', label: 'Blogs' },
     { id: 'resume', label: 'Resume' },
     { id: 'contact', label: 'Contact Me' }
   ]
