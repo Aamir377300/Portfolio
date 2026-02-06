@@ -8,7 +8,7 @@ import Skills from './components/Skills'
 import WorkExperience from './components/WorkExperience'
 // import OpenSource from './components/OpenSource'
 import Achievements from './components/Achievements'
-import Blogs from './components/Blogs'
+// import Blogs from './components/Blogs'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 
@@ -43,7 +43,7 @@ function App() {
         <WorkExperience />
         {/* <OpenSource /> */}
         <Achievements />
-        <Blogs />
+        {/* <Blogs /> */}
         <Resume />
         <Contact />
       </main>

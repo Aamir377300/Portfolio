@@ -60,8 +60,8 @@ const Blogs = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Blog & Articles</h2>
-          <p className="section-subtitle">Thoughts and insights on web development</p>
+          {/* <h2 className="section-title">Blog & Articles</h2>
+          <p className="section-subtitle">Thoughts and insights on web development</p> */}
         </motion.div>
         
         <div className="blogs-grid">

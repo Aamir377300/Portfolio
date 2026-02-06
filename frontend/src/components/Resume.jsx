@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaFilePdf } from 'react-icons/fa'
 import './Resume.css'
-import myResume from '../Assest/latest_resume.pdf'
+import myResume from '../Assest/change_resume.pdf'
 
 const Resume = () => {
 
@@ -61,7 +61,7 @@ const Resume = () => {
             
             <div className="resume-info">
               <p><strong>Format:</strong> PDF</p>
-              <p><strong>Last Updated:</strong>Nov 2025</p>
+              <p><strong>Last Updated:</strong>Jan 2026</p>
             </div>
 
           </div>
