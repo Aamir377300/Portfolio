@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import WorkExperience from './components/WorkExperience'
-// import OpenSource from './components/OpenSource'
+import Project from './components/Project'
 import Achievements from './components/Achievements'
 // import Blogs from './components/Blogs'
 import Resume from './components/Resume'
@@ -40,6 +40,7 @@ function App() {
       <main>
         <Hero />
         <Skills />
+        <Project />
         <WorkExperience />
         {/* <OpenSource /> */}
         <Achievements />
