@@ -7,6 +7,8 @@ import HTML_CSS from '../Assest/Certificate/HTML_CSS.png'
 import Postman from '../Assest/Certificate/Postman.png'
 import Wadhwani from '../Assest/Certificate/Wadhwani.png'
 import Hacktoberfest from '../Assest/Certificate/Hacktoberfest.png'
+import leetcode_50day from '../Assest/leetcode_50day.png'
+import leetcode_Dec from '../Assest/leetcode_Dec.png'
 
 import './Achievements.css'
 
@@ -48,15 +50,6 @@ const Achievements = () => {
     //   category: 'java Programming',
     //   date: 'November 2024'
     // },
-    // {
-    //   id: 5,
-    //   title: 'JavaScript Essentials Badge',
-    //   description: 'Achieved a certificate in JavaScript Essentials from Lets Upgrade. This program solidified my foundational knowledge and practical skills in JavaScript, enabling me to develop interactive and dynamic web experiences.',
-    //   image: JS,
-    //   icon: FaStar,
-    //   category: ['Web Development', 'Front-End', 'Programming'],
-    //   date: 'November 2024'
-    // },
     {
       id: 3,
       title: 'API Testing with Postman Certification',
@@ -76,6 +69,34 @@ const Achievements = () => {
       category: 'Open Source',
       date: '2025'
     },
+    {
+      id: 5,
+      title: "LeetCode 50 Days Badge – 2025",
+      description: "Earned the 50 Days Badge on LeetCode by consistently solving coding problems for 50+ days in 2025. Strengthened my problem-solving skills, data structures knowledge, and algorithmic thinking through daily practice.",
+      image: leetcode_50day,
+      icon: "🏅",
+      category: "Achievement",
+      date: "2025"
+    },
+
+    {
+      id: 6,
+      title: "LeetCode DCC December Badge – 2025",
+      description: "Earned the LeetCode Daily Coding Challenge (DCC) December 2025 Badge by consistently solving daily problems throughout the month. Improved problem-solving speed, algorithmic thinking, and mastery of data structures through continuous practice.",
+      image: leetcode_Dec,
+      icon: "🎯",
+      category: "Achievement",
+      date: "December 2025"
+    },
+    // {
+    //   id: 5,
+    //   title: '',
+    //   description: '',
+    //   image: leetcode_Dec,
+    //   icon: ,
+    //   category: ,
+    //   date: ''
+    // },
   ]
 
   return (
