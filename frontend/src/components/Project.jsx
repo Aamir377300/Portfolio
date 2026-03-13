@@ -5,6 +5,7 @@ import LearnEase from "../Assest/project/LearnEase.png";
 import PayGate from "../Assest/project/PayGate.png";
 import Spam_Detection from "../Assest/project/Spam_Detection.png";
 import Launchpad from "../Assest/project/Launchpad.png";
+import Study_smart_assistant from "../Assest/project/Study-smart-assistant.png";
 import './Project.css'
 
 
@@ -59,6 +60,16 @@ const Project = () => {
         githubLink: "https://github.com/Aamir377300/WeatherApp",
         liveLink: "https://weather-app-seven-navy-94.vercel.app/",
         category: "Frontend"
+      },
+      {
+        id: 4,
+        title: "Smart Study Assistant (Ongoing)",
+        description: "AI-powered full-stack study assistant that helps students learn topics efficiently. The backend fetches real data from the Wikipedia API and uses a HuggingFace AI model to generate structured learning content including summaries, quizzes, study tips, and optional math questions. The React frontend displays the generated content with quiz highlighting, topic history, and error handling for a smooth learning experience.",
+        image: Study_smart_assistant,
+        technologies: ["React", "Vite", "Node.js", "Express", "HuggingFace API", "Wikipedia API", "JavaScript", "CSS"],
+        githubLink: "https://github.com/Aamir377300/Smart-Study-Assistant",
+        liveLink: "https://smart-study-assistant-chi.vercel.app/",
+        category: "Full Stack / AI"
       }
 
 
