@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import { FaFilePdf } from 'react-icons/fa'
 import './Resume.css'
-import myResume from '../Assest/change_resume.pdf'
+
+const RESUME_LINK = "https://drive.google.com/file/d/1H9vh-qk1672UYz_2GMAZRwiwRILPAaRw/view?usp=sharing"
 
 const Resume = () => {
 
   const handleViewResume = () => {
-    // Opens PDF in a new tab
-    window.open(myResume, "_blank", "noopener,noreferrer")
+    window.open(RESUME_LINK, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -61,7 +61,7 @@ const Resume = () => {
             
             <div className="resume-info">
               <p><strong>Format:</strong> PDF</p>
-              <p><strong>Last Updated:</strong>Jan 2026</p>
+              <p><strong>Last Updated:</strong>Apr 2026</p>
             </div>
 
           </div>
