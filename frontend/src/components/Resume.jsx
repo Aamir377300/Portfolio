@@ -61,7 +61,7 @@ const Resume = () => {
             
             <div className="resume-info">
               <p><strong>Format:</strong> PDF</p>
-              <p><strong>Last Updated:</strong>Apr 2026</p>
+              <p><strong>Last Updated:</strong> May 2026</p>
             </div>
 
           </div>
