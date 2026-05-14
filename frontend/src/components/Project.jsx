@@ -5,11 +5,12 @@ import AITeachingAssistant from "../Assest/project/AI_Teaching_Assistant.png";
 import LearnEase from "../Assest/project/LearnEase.png";
 import PayGate from "../Assest/project/PayGate.png";
 import Spam_Detection from "../Assest/project/Spam_Detection.png";
-import Launchpad from "../Assest/project/Launchpad.png";
-import Study_smart_assistant from "../Assest/project/Study-smart-assistant.png";
 import OpenClaw_Sentinel from "../Assest/project/OpenClaw_Sentinel.png";
 import Food_Fiesta from "../Assest/project/Food_Fiesta.png";
 import Blockchain_Payment from "../Assest/project/Blockchain_Payment.png";
+import VisionGesture from "../Assest/project/VisionGesture.png";
+import FinTrack from "../Assest/project/FinTrack.png";
+import Fine_tune from "../Assest/project/Fine_tune.png";
 import './Project.css'
 
 
@@ -71,9 +72,50 @@ const Project = () => {
   category: "Backend"
 },
 
+{
+  id: 3,
+  title: "Answer Reviewer AI",
+  description:
+    "An AI-powered automatic answer grading system built by fine-tuning Mistral-7B-Instruct using QLoRA. The model evaluates student answers against reference answers, predicts grading categories, and generates feedback explanations. Trained on real academic datasets with efficient 4-bit quantization and LoRA-based fine-tuning for deployment on low-resource hardware.",
+  image: Fine_tune,
+  technologies: [
+    "Python",
+    "Mistral-7B",
+    "QLoRA",
+    "LoRA",
+    "Transformers",
+    "Hugging Face",
+    "bitsandbytes",
+    "Google Colab",
+    "PyTorch",
+    "Machine Learning"
+  ],
+  githubLink: "",
+  liveLink: "",
+  category: "AI & Machine Learning",
+},
+{
+  id: 4,
+  title: "VisionGestureControl",
+  description:
+    "A real-time computer vision application that enables touchless web navigation using hand gestures. Built with MediaPipe hand landmark detection and OpenCV, the system tracks palm movement in real time and converts vertical hand gestures into smooth browser scrolling actions with intelligent cooldown handling and visual feedback.",
+  image: VisionGesture,
+  technologies: [
+    "Python",
+    "MediaPipe",
+    "OpenCV",
+    "PyAutoGUI",
+    "Computer Vision",
+    "Pytest"
+  ],
+  githubLink: "https://github.com/Aamir377300/VisionGestureControl",
+  liveLink: "",
+  category: "Computer Vision & AI",
+},
+
 
         {
-  id: 3,
+  id: 5,
   title: "Food Fiesta",
   description:
     "A fullstack dining management application built with Java 21 and Spring Boot featuring role-based authentication, product inventory management, order processing, Swagger API documentation, H2/PostgreSQL database support, and a modern Thymeleaf UI. Includes admin dashboard, customer flows, Docker support, and optional Google OAuth2 login integration.",
@@ -99,7 +141,7 @@ const Project = () => {
 },
     
     {
-      id: 4,
+      id: 6,
       title: "AI Teaching Assistant – AI-Powered Learning Platform (ongoing)",
       description: "A full-stack AI-powered teaching platform that enables teachers to generate notes, quizzes, and slides using LLMs. Implements Retrieval-Augmented Generation (RAG) with FastAPI and Pinecone to answer queries from uploaded PDFs. Includes Google OAuth and Calendar API integration for automatic Google Meet scheduling, role-based access control (JWT) for teachers and students, assignment submission with one-attempt quizzes, and PDF export of results using PDFKit and Cloudinary. Designed scalable APIs and AI workflows to centralize teaching and learning.",
       image: AITeachingAssistant,
@@ -108,8 +150,33 @@ const Project = () => {
       liveLink: "",
       category: "AI / Full Stack"
     },
+
     {
-      id: 5,
+  id: 7,
+  title: "FinTrack AI",
+  description:
+    "A professional-grade AI-powered expense management mobile app built with React Native Expo. Features OCR-based receipt scanning, automated metadata extraction using Groq AI, JWT authentication, Kafka-driven event architecture, and MongoDB storage for intelligent financial tracking.",
+  image: FinTrack,
+  technologies: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Kafka",
+    "Groq AI",
+    "Google Vision API",
+    "JWT",
+    "Docker"
+  ],
+  githubLink: "https://github.com/Aamir377300/FinTrack-AI",
+  liveLink: "",
+  category: "AI & Mobile Development",
+},
+
+    {
+      id: 8,
       title: "LearnEase – Mini Learning Management System (LMS)",
       description: "A full-stack MERN-based Learning Management System supporting students, instructors, and admins with secure JWT authentication and role-based access control. Features include course management, Cloudinary video uploads, assignment submission and grading workflow, real-time course chat, automated Google Meet scheduling via Google Calendar API, CI/CD integration with GitHub Actions, and Docker-based development setup.",
       image: LearnEase,
@@ -119,7 +186,7 @@ const Project = () => {
       category: "Full Stack"
     },
     {
-      id: 6,
+      id: 9,
       title: "PayGate – Payment Gateway Integration System",
       description: "A full-stack payment processing application built with Django REST Framework and React, integrated with Razorpay for secure online transactions. Features include user authentication, CSRF protection, order creation and signature verification, transaction history tracking, admin dashboard for monitoring payments, payment logs for audit trails, and real-time payment status updates. The project is fully deployed with backend on Render and frontend on Vercel, with automated test cases ensuring secure and reliable payment handling.",
       image: PayGate,
@@ -129,17 +196,7 @@ const Project = () => {
       category: "Full Stack"
     },
     {
-      id: 7,
-      title: "Launchpad – Career & Opportunity Platform",
-      description: "A full-stack MERN platform connecting students, startups, and professionals in one ecosystem. Features include secure JWT-based authentication, student dashboard, admin panel, internship and opportunity listings, profile management with Cloudinary image uploads, and email integration via SMTP. Built with scalable backend architecture and deployed on Vercel, Launchpad focuses on simplifying career discovery and collaboration.",
-      image: Launchpad,
-      technologies: ["React (Vite)", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "SMTP", "Vercel"],
-      githubLink: "https://github.com/Aamir377300/launchpad",
-      liveLink: "https://launchpadsfinal.vercel.app/mainpage",
-      category: "Full Stack",
-    },
-    {
-      id: 8,
+      id: 10,
       title: "SMS Spam Detection System – Ensemble Machine Learning Project",
       description: "An end-to-end text classification system built using the Kaggle SMS Spam Collection dataset. Performed data cleaning, exploratory data analysis (EDA), text preprocessing (tokenization, stopword removal, stemming), and feature extraction using TF-IDF. Trained and evaluated multiple machine learning models including Naive Bayes, Logistic Regression, Decision Tree, Random Forest, SVM, and KNN. Improved prediction performance using ensemble techniques such as Voting Classifier (hard and soft voting) and Stacking with a meta-model, and compared model accuracy, precision, recall, and F1-score to select the best-performing model.",
       image: Spam_Detection,
@@ -148,26 +205,6 @@ const Project = () => {
       liveLink: "https://colab.research.google.com/drive/1vZC3V8ZfF0xq8X3QkeafWKvXyRFqO3Hh#scrollTo=PD4lzJ1yzRp3",
       category: "Machine Learning"
     },
-    {
-      id: 9,
-      title: "WeatherApp – Interactive Weather Forecast Application",
-      description: "A responsive and interactive weather application built using HTML, CSS, and JavaScript. It allows users to search any city or use their current location to fetch real-time weather data. Features include current temperature, weather conditions, humidity, Air Quality Index (AQI), moon phase calculation, 8-hour forecast, 7-day weekly forecast, and dynamic map integration using Leaflet and OpenStreetMap. The app consumes the OpenWeatherMap API and is fully deployed on Vercel.",
-      image: Weather_App,
-      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API", "Leaflet.js", "OpenStreetMap"],
-      githubLink: "https://github.com/Aamir377300/WeatherApp",
-      liveLink: "https://weather-app-seven-navy-94.vercel.app/",
-      category: "Frontend"
-    },
-    {
-      id: 10,
-      title: "Smart Study Assistant (Ongoing)",
-      description: "AI-powered full-stack study assistant that helps students learn topics efficiently. The backend fetches real data from the Wikipedia API and uses a HuggingFace AI model to generate structured learning content including summaries, quizzes, study tips, and optional math questions. The React frontend displays the generated content with quiz highlighting, topic history, and error handling for a smooth learning experience.",
-      image: Study_smart_assistant,
-      technologies: ["React", "Vite", "Node.js", "Express", "HuggingFace API", "Wikipedia API", "JavaScript", "CSS"],
-      githubLink: "https://github.com/Aamir377300/Smart-Study-Assistant",
-      liveLink: "https://smart-study-assistant-chi.vercel.app/",
-      category: "Full Stack / AI"
-    }
 
 
 
